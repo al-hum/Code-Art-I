@@ -1,0 +1,17 @@
+//Processing 3.5.4
+
+float a = 0;
+
+void setup(){
+ size(400,400, P3D);
+}
+
+void draw(){
+
+translate(mouseX, mouseY, map(noise(a),0,1,-50, 300));
+box(50);
+a = a + 0.01;
+}
+
+//With the guidance of aBe.
+//Supported by Fondo Nacional de las Artes de Argentina.
